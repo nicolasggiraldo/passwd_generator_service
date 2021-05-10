@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
 
-from responses.password_generator import password_generator
+from app.responses.password_generator import password_generator
 
 app = FastAPI()
 
@@ -17,4 +17,4 @@ async def pass_generator(length: int = 10):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8080)
