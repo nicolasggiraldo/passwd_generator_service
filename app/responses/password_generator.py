@@ -13,7 +13,8 @@ def password_generator(length=10):
     lower = string.ascii_lowercase
     upper = string.ascii_uppercase
     num = string.digits
-    symbols = string.punctuation
+    # symbols = string.punctuation
+    symbols = '!#$%&()*+,-.:;<=>?[]_{|}'
 
     # combine the data
     all_strings = lower + upper + num + symbols
